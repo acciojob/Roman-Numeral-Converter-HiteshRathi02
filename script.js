@@ -15,9 +15,6 @@ const romanMap = [
 ]
 
 function convertToRoman(num) {
-  if(num>1999 || num < 1) {
-    return 'Input must be between 1 and 1999';
-  }
   let roman = '';
   for(let i=0; i<romanMap.length; i++) {
     let [romanChar, numToConvert] = romanMap[i];
